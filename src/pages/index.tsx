@@ -18,18 +18,18 @@ const SPREADSHEET_QUERY = graphql`
         limitMonthInTheFuture
       }
     }
-    allGoogleEventsSheet {
+    allGoogleEventsSheet1 {
         nodes {
-          id: Timestamp
-          namePublisher: aName
-          emailPublisher: aEmail
-          eventName: eDenomination
-          date: when
-          hour: whentime
-          typeEvent: eType
-          eventLink: eLink
-          form: efLink
-          specialist: exhibitor
+          Timestamp
+          aName
+          aEmail
+          eDenomination
+          when
+          whentime
+          eType
+          eLink
+          efLink
+          exhibitor
         }
     }
   }
