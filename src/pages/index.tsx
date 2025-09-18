@@ -18,7 +18,7 @@ const SPREADSHEET_QUERY = graphql`
         limitMonthInTheFuture
       }
     }
-    allGoogleEventsSheet1 {
+    allGoogleSheetsSheet1 {
         nodes {
           Timestamp
           aName
