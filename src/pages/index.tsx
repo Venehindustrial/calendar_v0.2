@@ -19,9 +19,8 @@ const SPREADSHEET_QUERY = graphql`
       }
     }
     allGoogleEventsSheet {
-      edges {
         nodes {
-          id
+          id: Timestamp
           namePublisher: aName
           emailPublisher: aEmail
           eventName: eDenomination
@@ -32,7 +31,6 @@ const SPREADSHEET_QUERY = graphql`
           form: efLink
           specialist: exhibitor
         }
-      }
     }
   }
 `;
