@@ -63,12 +63,12 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-google-spreadsheets',
       options: {
         //spreadsheetId: process.env.SPREADSHEET_ID,
-        //apiKey: process.env.GOOGLE_API_KEY,
-        // Add additional options for better debugging
-        //worksheetTitle: 'Sheet1',   // Specify the worksheet name if known
-        //typePrefix: 'GoogleEvents', // This will create allGoogleEventsSheet
-        //downloadImages: false,      // Disable image download for faster builds
         spreadsheetId,
+        apiKey: process.env.GOOGLE_API_KEY,
+        // Add additional options for better debugging
+        worksheetTitle: 'Sheet1',   // Specify the worksheet name if known
+        typePrefix: 'GoogleEvents', // This will create allGoogleEventsSheet
+        downloadImages: false,      // Disable image download for faster builds
         credentials: {
           type: 'service_account',
           project_id: getEnv(process.env, 'PROJECT_ID'),
